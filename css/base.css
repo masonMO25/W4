@@ -3,10 +3,6 @@
     @apply dark:bg-black dark:text-white;
   }
 
-  heading {
-    @apply text-center;
-  }
-
   a {
     @apply text-blue-400 underline;
   }
@@ -17,6 +13,14 @@
 
   h1 {
     @apply my-4 text-center text-2xl font-black;
+  }
+
+  h2 {
+    @apply my-2 text-center text-xl font-bold;
+  }
+
+  h3 {
+    @apply my-2 text-center text-lg font-bold;
   }
 
   nav {
