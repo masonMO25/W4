@@ -23,7 +23,21 @@
     @apply container mx-auto mt-16;
   }
 
-  button[type="button"] {
+  button[type="button"],
+  button[type="submit"] {
     @apply rounded bg-blue-400 px-4 py-2 text-white transition-colors hover:bg-blue-600;
+  }
+
+  form {
+    @apply flex flex-col items-center gap-4;
+  }
+
+  label {
+    @apply sr-only;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    @apply rounded;
   }
 }
