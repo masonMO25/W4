@@ -3,6 +3,10 @@
     @apply dark:bg-black dark:text-white;
   }
 
+  heading {
+    @apply text-center;
+  }
+
   a {
     @apply text-blue-400 underline;
   }
@@ -39,5 +43,9 @@
   input[type="text"],
   input[type="email"] {
     @apply rounded;
+  }
+
+  p {
+    @apply text-center;
   }
 }
