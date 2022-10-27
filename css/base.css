@@ -15,6 +15,10 @@
     @apply my-4 text-center text-2xl font-black;
   }
 
+  nav {
+    @apply my-4;
+  }
+
   main {
     @apply container mx-auto mt-16;
   }
