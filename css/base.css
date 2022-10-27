@@ -3,11 +3,23 @@
     @apply dark:bg-black dark:text-white;
   }
 
+  a {
+    @apply text-blue-400 underline;
+  }
+
   li {
     @apply list-none;
   }
 
   h1 {
     @apply my-4 text-center text-2xl font-black;
+  }
+
+  main {
+    @apply container mx-auto mt-16;
+  }
+
+  button[type="button"] {
+    @apply rounded bg-blue-400 px-4 py-2 text-white transition-colors hover:bg-blue-600;
   }
 }

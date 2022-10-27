@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Base styles (absolute path) -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Click Counter</title>
+  </head>
+  <body>
+    <main
+      class="flex flex-col items-center justify-center gap-y-16 bg-yellow-200 py-8"
+    >
+      <p>Current Count: <span id="count" class="font-bold">0</span></p>
+      <section class="flex gap-x-8">
+        <button id="increment" type="button">Increment</button>
+        <button id="decrement" type="button">Decrement</button>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
