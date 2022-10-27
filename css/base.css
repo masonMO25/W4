@@ -1,0 +1,9 @@
+@layer base {
+  li {
+    @apply list-none;
+  }
+
+  h1 {
+    @apply my-4 text-center text-2xl font-black;
+  }
+}
