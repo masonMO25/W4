@@ -1,3 +1,19 @@
-// TODO: Handle form submission (prevent default)
-// TODO: Capture the form data into an object and then output message in '#response' element
-// Example: "Thank you for your submission John Doe. We will be in touch shortly using your email: john@doe.com"
+const form = document.querySelector("form");
+const p = document.querySelector("p");
+
+function createResponseMessage(formInfo) {
+  return `
+  <p>Thank you ${formInfo.name} for your message!</p>`;
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+
+  const data = new FormData(e.target);
+  const userInputs = Objects.fromEnties(data.entries());
+  console.log(userInputs);
+
+  p.innerHTML = createResponseMessage(userInputs);
+}
+
+form.addEventListener("submit", handleSubmit);
