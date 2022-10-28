@@ -10,7 +10,7 @@ function handleSubmit(e) {
   e.preventDefault();
 
   const data = new FormData(e.target);
-  const userInputs = Objects.fromEnties(data.entries());
+  const userInputs = Object.fromEnties(data.entries());
   console.log(userInputs);
 
   p.innerHTML = createResponseMessage(userInputs);
